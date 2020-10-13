@@ -6,12 +6,15 @@ class InputForm extends React.Component {
     super(props);
     this.state = { username: '' };
   }
+  mySubmitHandler = (event) => {
+    event.preventDefault();
+  }
   myChangeHandler = (event) => {
     this.setState({username: event.target.value});
   }
   render() {
     return (
-      <form>
+      <form onSubmit={this.mySubmitHandler}>
       <h1>Welcome {this.state.username}</h1>
       <p>Enter your name:</p>
       <input
