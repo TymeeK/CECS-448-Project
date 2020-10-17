@@ -1,15 +1,39 @@
-.home {
-  min-height: 100vh;
-  background: rgb(54, 145, 175);
-  color: whitesmoke;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+#sidebar-menu {
+  background: #6cb2b2;
+  overflow: hidden;
+  position: absolute;
+  width: 55px;
+  font-size: 14px;
+  font-weight: 900px;
+  color:#abe2ff;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.sidebar-menu {
+  background: #FFF;
+  height: 100%;
+  outline: 1px solid #ccc;
+  width: 4%;
+}
+
+.middle {
+  background: #E4F0AB;
+  width: 60%;
+}
+
+.right {
+  background: #C4ABF0;
+  width: 36%;
 }
 
 .header {
   min-height: 50vh;
   align-self: start;
+  color: #000;
 }
 
 .nav {
@@ -48,6 +72,3 @@
   justify-content: space-around;
   align-items: center;
 }
-
-
-
